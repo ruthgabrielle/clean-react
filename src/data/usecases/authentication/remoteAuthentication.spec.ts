@@ -6,6 +6,7 @@ type SutTypes = {
   sut: RemoteAuthenticaton
   httpPostClientSpy: HttpPostClientSpy
 }
+
 const makeSut = (url: string = faker.internet.url()): SutTypes => {
   const httpPostClientSpy = new HttpPostClientSpy()
   const sut = new RemoteAuthenticaton(url, httpPostClientSpy) // system under test
