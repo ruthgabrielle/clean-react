@@ -1,9 +1,14 @@
 export enum HttpStatusCode {
-  unhautorized = 401,
-  noContent = 204
+  ok = 200,
+  noContent = 204,
+  badRequest = 400,
+  unauthorized = 401,
+  notFound = 404,
+  serverError = 500
 }
 
-export type HttpResponse = {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export type HttpResponse<T> = {
   statusCode: HttpStatusCode
   body?: any
 }
