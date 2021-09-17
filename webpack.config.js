@@ -31,13 +31,17 @@ module.exports = {
                 }
             },
             {
-                loader: 'scss-loader'
+                loader: 'sass-loader'
             }]
         }]
     },
     devServer: {
-        contentBase: './public',
-        writeToDisk: true,
+        devMiddleware: {
+          writeToDisk: true
+        },
+        static: {
+          directory: './public'
+        },
         historyApiFallback: true
     },
     externals: {
