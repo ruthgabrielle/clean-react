@@ -42,14 +42,6 @@ button {
   height: 100vh;
   justify-content: space-between;
 
-  .header {
-    background-color: $primary;
-    display: flex;
-    border-top: 40px solid $primaryDark;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .form {
     display: flex;
     flex-direction: column;
@@ -120,16 +112,5 @@ button {
   .footer {
     background-color: $primary;
     height: 48px;
-  }
-
-  img {
-    width: 70px;
-    height: 70px;
-    margin-top: 40px;
-  }
-
-  h1 {
-    color: $white;
-    margin: 16px 0px 40px;
   }
 }
