@@ -44,7 +44,7 @@ The main goal of this training is to show how to create a system in ReactJs usin
 * Continuous Delivery
 * Continuous Deployment
 
- ## Bibliotecas e Ferramentas
+ ## Libs and Tools
 * Typescript
 * React
 * Recoil
